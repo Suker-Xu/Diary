@@ -1,3 +1,9 @@
 2017/03/06
-该文件为日记
 今天开始要记录工作日记了，记录自己工作、生活的点点滴滴，特此申明，以此来鞭策自己...
+
+2017/03/08
+1、今天学习了mysql视图，习得如下：
+  a) 视图可以跨库使用，但数据库必须在同一台服务器上
+  b) 多表视图不能用物理表的索引，对于大数据量的表，视图基本没有了，但是单表的视图能不能用索引，这个还有待实验证实
+  c) 创建视图示例：
+    create view t_view_test as select t1.id id, t1.name name from t_user as t1 union select t2.id id, t2.sName name from t_user2 as t2;
