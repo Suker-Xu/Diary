@@ -7,3 +7,7 @@
   b) 多表视图不能用物理表的索引，对于大数据量的表，视图基本没有了，但是单表的视图能不能用索引，这个还有待实验证实
   c) 创建视图示例：
     create view t_view_test as select t1.id id, t1.name name from t_user as t1 union select t2.id id, t2.sName name from t_user2 as t2;
+
+2017/03/24
+1、今天学习了sql的update if when then else end 语法
+  举例：update t_integral_job_log set iTotalNum = case iTotalNum when iTotalNum>=100 then iTotalNum-100 else 0 end where iAutoID=1;
