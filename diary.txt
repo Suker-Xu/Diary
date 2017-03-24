@@ -10,4 +10,6 @@
 
 2017/03/24
 1、今天学习了sql的update if when then else end 语法
-  举例：update t_integral_job_log set iTotalNum = case iTotalNum when iTotalNum>=100 then iTotalNum-100 else 0 end where iAutoID=1;
+  举例：
+    update t_integral_job_log set iTotalNum = case iTotalNum when 100 then iTotalNum-100 else 0 end where iAutoID=1;
+    update t_integral_job_log set iTotalNum = case when iTotalNum>=100 then iTotalNum-100 else 0 end where iAutoID=1;
